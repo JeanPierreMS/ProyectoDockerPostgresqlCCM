@@ -1,0 +1,1 @@
+docker run -it --rm --name POSTRE -e POSTGRES_USER=administrator -e POSTGRES_PASSWORD=tresleches -e PGDATA="/data" -v ${PWD}/pgdata:/data -v ${PWD}/config:/config -p 15432:2077 postgres:latest -c 'config_file=/config/postgresql.conf'
